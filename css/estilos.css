@@ -1,0 +1,40 @@
+/* Fondo animado del header */
+@keyframes zoomHeader {
+    0% { background-size: 100%; }
+    50% { background-size: 105%; }
+    100% { background-size: 100%; }
+  }
+  
+  header {
+    background: url(../assets/img/headerand\ footer.jpg) center/cover no-repeat;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: zoomHeader 20s ease-in-out infinite;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1, header p, header nav {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilo de títulos y habilidades */
+  section h2 {
+    color: #6b21a8;
+  }
+  
+  #habilidades {
+    background-color: #f3e8ff;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
