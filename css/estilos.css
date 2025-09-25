@@ -27,6 +27,20 @@
     z-index: 1;
   }
   
+    /* Fondo animado con gradiente */
+.animated-gradient {
+  background: linear-gradient(270deg, #C0A98E, #B76E79, #EAE7E2, #FFF3E0);
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+  z-index: -2;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
   /* Estilo de títulos y habilidades */
   section h2 {
     color: #6b21a8;
@@ -37,4 +51,49 @@
     border-radius: 10px;
     padding: 2rem;
   }
-  
+/* Animación de gradiente */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Animación de estrellas */
+.stars, .stars2, .stars3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 0;
+  animation: moveStars 60s linear infinite;
+}
+.stars {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+}
+.stars2 {
+  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  animation-duration: 90s;
+}
+.stars3 {
+  background-image: url('https://www.transparenttextures.com/patterns/tiny-grid.png');
+  animation-duration: 120s;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* FadeIn para el texto */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 2s ease-out forwards;
+}

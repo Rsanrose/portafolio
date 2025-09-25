@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio UX/UI Designer & Virtual Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FDFDFB; /* Beige muy claro */
+      color: #4A4A4A; /* Gris oscuro base */
+    }
+
+    /* 🎨 Paleta personalizada */
+    .bg-warm-beige { background-color: #f5f5dcd3; }      /* beige medio */
+    .bg-warm-gray { background-color: #EAE7E2; }       /* gris cálido */
+    .text-warm-gray-dark { color: #6B6A68; }           /* gris oscuro */
+    .bg-deep-gray { background-color: #2E2E2E; }       /* casi negro */
+    .accent-color { color: #C0A98E; }                  /* beige oscuro */
+    .accent-bg { background-color: #C0A98E; }
+    .accent-brown { background-color: #8C6C4F; }
+    .accent-rose { background-color: #B76E79; }
+    .accent-soft { background-color: #FFF3E0; }
+
+    /* Gradientes */
+    .gradient-title {
+      background: linear-gradient(90deg, #C0A98E, #B76E79);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Animaciones al hacer scroll */
+    .reveal {
+      position: relative;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="w-full fixed top-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-warm-gray-dark">Rosmary Sanchez</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-accent-color transition-colors duration-300">Sobre mí</a>
+        <a href="#services" class="hover:text-accent-color transition-colors duration-300">Servicios</a>
+        <a href="#portfolio" class="hover:text-accent-color transition-colors duration-300">Portafolio</a>
+        <a href="#contact" class="hover:text-accent-color transition-colors duration-300">Contacto</a>
+        <a href="../index.html" class="hover:text-accent-color transition-colors duration-300">English</a>
+    </nav>
+   
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="#about" class="block py-2 text-center hover:text-accent-color transition-colors duration-300">Sobre mí</a>
+      <a href="#services" class="block py-2 text-center hover:text-accent-color transition-colors duration-300">Servicios</a>
+      <a href="#portfolio" class="block py-2 text-center hover:text-accent-color transition-colors duration-300">Portafolio</a>
+      <a href="#contact" class="block py-2 text-center hover:text-accent-color transition-colors duration-300">Contacto</a>
+      <a href="#contact" class="block mt-2 text-center bg-warm-gray-dark text-white px-4 py-2 rounded-lg hover:bg-accent-brown transition-colors duration-300">Hablemos</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+   <section id="hero" class="relative min-h-screen flex items-center">
+      <img src="../assets/img/Header porfolio2.png" alt="Equipo de diseño trabajando" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-white/80"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 reveal gradient-title">
+            Diseño Experiencias Digitales Intuitivas con Organización Impecable
+          </h1>
+          <p class="text-lg md:text-xl text-warm-gray-dark mb-8 reveal">
+           Apoyo integral en <strong>asistencia virtual</strong> (agenda, correos, reportes, SOPs)
+    y <strong>diseño UX/UI</strong> para crear experiencias claras y eficientes.
+  </p>
+          </p>
+          <a href="#portfolio" class="text-3xl font-bold mb-4 gradient-title">Ver mis trabajos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="reveal">
+            <img src="../assets/img/Foto user portafolio.png" alt="Foto de perfil de Rosmary Sanchez" class="rounded-lg shadow-xl w-full h-auto object-cover aspect-square">
+          </div>
+          <div class="reveal">
+            <h2 class="text-3xl font-bold mb-4 gradient-title">De la Asistencia Virtual al Diseño UX/UI</h2>
+            <p class="text-warm-gray-dark mb-4">Hola, soy Rosmary. Durante 4 años, mi rol como Asistente Virtual me enseñó la importancia de la eficiencia y la comunicación clara.</p>
+            <p class="text-warm-gray-dark mb-4">Esta experiencia fue mi puente hacia el diseño UX/UI. Descubrí que mi habilidad para organizar y empatizar son las mismas que definen un gran diseño.</p>
+            <p class="text-warm-gray-dark">Ahora combino disciplina y creatividad para diseñar productos digitales fáciles de usar y que resuelven problemas reales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS DE ASISTENTE VIRTUAL -->
+<section id="va-services" class="py-20 bg-gradient-to-r from-warm-beige to-accent-soft">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-2 reveal gradient-title">Servicios de Asistente Virtual</h2>
+    <p class="text-warm-gray-dark text-center mb-12 max-w-2xl mx-auto reveal">
+      Apoyo operativo y administrativo para founders, equipos de producto y marketing. Enfoque en eficiencia, comunicación clara y documentación.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Gestión de agenda y correos</h3>
+        <p class="text-warm-gray-dark">Priorizar, etiquetar y responder con plantillas. Coordinación de reuniones y follow-ups.</p>
+      </div>
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Soporte administrativo</h3>
+        <p class="text-warm-gray-dark">Organización de archivos, minutas, contratos, pagos y control documental.</p>
+      </div>
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Atención al cliente</h3>
+        <p class="text-warm-gray-dark">Gestión de tickets, SLA de respuestas, guiones y escalamiento con empatía.</p>
+      </div>
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Investigación & reportes</h3>
+        <p class="text-warm-gray-dark">Benchmark, research rápido, hojas de cálculo y resúmenes ejecutivos accionables.</p>
+      </div>
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Documentación (SOPs)</h3>
+        <p class="text-warm-gray-dark">Procedimientos paso a paso, checklists y QA para estandarizar procesos.</p>
+      </div>
+      <!-- Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg border-t-4 border-accent-bg transition-all reveal">
+        <h3 class="font-bold text-xl mb-2">Gestión de contenidos</h3>
+        <p class="text-warm-gray-dark">Calendarios, publicación en plataformas, coordinación con diseñadores/redactores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Services in UX|UI Design -->
+    <section id="services" class="py-20 bg-accent-soft">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-2 reveal gradient-title">Mis Servicios en Diseño UX UI</h2>
+        <p class="text-warm-gray-dark mb-12 max-w-2xl mx-auto reveal">Ofrezco un conjunto de habilidades único que garantiza diseño y organización.</p>
+        <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg transform transition duration-500 hover:scale-105 fade-in">
+        <h3 class="text-xl font-semibold text-accent-brown mb-4">Prototipado</h3>
+        <p class="text-gray-700">Diseño de wireframes y prototipos interactivos que optimizan la navegación y la experiencia del usuario.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg transform transition duration-500 hover:scale-105 fade-in">
+        <h3 class="text-xl font-semibold text-accent-brown mb-4">Diseño Visual</h3>
+        <p class="text-gray-700">Creación de interfaces, garantizando accesibilidad y legibilidad.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="p-6 bg-white rounded-2xl shadow-lg transform transition duration-500 hover:scale-105 fade-in">
+        <h3 class="text-xl font-semibold text-accent-brown mb-4">Optimización de Procesos</h3>
+        <p class="text-gray-700">Análisis de la experiencia de usuario para detectar fricciones y proponer mejoras medibles.</p>
+      </div>
+
+    </div>
+  </div>
+    </section>
+
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 reveal gradient-title">Mi Trabajo</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden group reveal hover:shadow-xl transition-all">
+            <img src="../assets/img/Encanto encendido landing page.PNG" alt="Proyecto Encanto Encendido" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Encanto Encendido</h3>
+              <p class="text-warm-gray-dark mb-4">Landing page para una marca de velas aromáticas.</p>
+              <a href="https://encanto-encendido.netlify.app/" target="_blank" class="font-semibold text-accent-color hover:underline">Ver proyecto →</a>
+            </div>
+          </div>
+          <!-- Project -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden group reveal hover:shadow-xl transition-all">
+            <img src="../assets/img/Florabuddy app.PNG" alt="Florabuddy" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Florabuddy Case Study</h3>
+              <p class="text-warm-gray-dark mb-4">App para cuidado de plantas.</p>
+              <a href="https://www.behance.net/gallery/207624561/UIUX-Case-Study-Florabuddy" target="_blank" class="font-semibold text-accent-color hover:underline">Ver en Behance →</a>
+            </div>
+          </div>
+          <!-- Project -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden group reveal hover:shadow-xl transition-all">
+            <img src="../assets/img/Orquidea rediseño UX.PNG" alt="Rediseño Orquídea" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Rediseño Landing Page</h3>
+              <p class="text-warm-gray-dark mb-4">Optimización UX/UI de una landing page.</p>
+              <a href="https://www.canva.com/design/DAGVh6A1cMU/q5lm6hHxIrfOAytV75DDTQ/view" target="_blank" class="font-semibold text-accent-color hover:underline">Ver en Canva →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-warm-gray to-warm-beige">
+      <div class="container mx-auto px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold mb-4 reveal gradient-title">¿Tienes un proyecto en mente?</h2>
+          <p class="text-warm-gray-dark mb-6 reveal">Me encantaría saber cómo puedo ayudarte a hacerlo realidad. ¡Escríbeme y empecemos a crear algo increíble juntos!</p>
+
+          <!-- Correo destacado -->
+          <p class="font-bold text-lg text-warm-gray-dark mb-6 reveal">
+            📧 <a href="mailto:rsanrose0203@gmail.com" class="hover:text-accent-color transition-colors duration-300">rsanrose0203@gmail.com</a>
+          </p>
+
+          
+          <!-- Descargas editables -->
+ <section id="descargas" class="py-20 bg-accent-soft">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-2 reveal gradient-title">Descargas en formato editable</h2>
+    <p class="text-warm-gray-dark mb-8 max-w-2xl mx-auto reveal">
+      Para publicación en sitios web por favor contactame.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6 reveal">
+      <a href="assets/docs/CV Asistente virtual RSR.pdf" download 
+         class="inline-flex items-center justify-center bg-accent-brown border border-accent-bg text-warm-gray-dark px-6 py-3 rounded-full font-bold hover:bg-accent-bg hover:text-white transition-all">
+        📄 Descargar CV (PDF)
+    
+      </a>
+      <a href="assets/docs/Presentación Porfolio Asistente y Diseñadora.pdf" download 
+         class="inline-flex items-center justify-center bg-accent-brown border border-accent-bg text-warm-gray-dark px-6 py-3 rounded-full font-bold hover:bg-accent-bg hover:text-white transition-all">
+        🎨 Descargar Portfolio (PDF)
+      </a>
+    </div>
+
+    <p class="text-warm-gray-dark mt-6 text-sm reveal">
+      *If you need another format, please write to me and I will send it to you.
+    </p>
+  </div>
+</section>
+
+
+          <!-- Botón CTA -->
+          <a href="mailto:rsanrose0203@gmail.com" class="bg-accent-bg text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-accent-rose hover:scale-105 transform transition-all duration-300 inline-block reveal">Hablemos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-deep-gray text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Rosmary Sanchez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Animaciones al hacer scroll
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    // Menú móvil
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
